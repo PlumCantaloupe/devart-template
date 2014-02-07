@@ -1,16 +1,18 @@
 {
     "technologies": {
         "apis": [
-            "insert apis"
+            "Web Search",
+            "Google Plus"
         ],
         "platforms": [
-            "insert platforms"
+            "Google Compute Engine"
         ],
         "toolkits": [
-            "insert toolkits"
+            "Cinder Frameworks",
+            "OpenCV"
         ]
     },
     "themes": [
-        "insert themes"
+        "Awareness"
     ]
 }
