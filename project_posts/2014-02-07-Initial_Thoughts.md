@@ -1,9 +1,9 @@
-# Initial Thoughts
+# Initial Thoughts #
 
-##The Challenge
+## The Challenge ##
 What a challenge to create something that pushes the boundaries of the technology while also traversing the outer limits of how technology can be reappropriated for art in two months! A worthy one though. At the very least a way to push myself as a technology-based artist with a schedule and impetus in the form of someone possibly watching. I have often thought of a performance art piece where I sit in a public space coding away on my computer and plucking away at screens, projectors, and Arduinos at a desk or, my favourite, in bed (terrible for posture I am sure). Until I can realize that likely unoriginal idea this seems like good practice.
 
-##The Idea
+## The Idea ##
 Often when I am challenged with coming up with a concept I start with a pen and paper. In design and in art I find it so useful to move away from the technology and use something that doesn't allow me to undo or erase, not being inhibited, or distracted, by a blinking cursor and pop-up notifications. So my first two images are of a mind-map of three very important concepts to what I want this project to be - Interactivity, the cello, and Google.
 
 ![Mind Map](../project_images/MindMap.jpg?raw=true "Mind Map")
@@ -13,15 +13,15 @@ Often when I am challenged with coming up with a concept I start with a pen and 
 - the **cello** is such a beautiful instrument, often noted as the instrument closest in tonal ranges to the human voice with a human sounding timbre to match. It can be engrossingly emotional and I try to use it everywhere I can, and yet to be honest , in this instance I am attempting to be pragmatic. I play the cello a bit and really want to use this piece to showcase a cellist friends new record performance in March. There is no room for a cello just yet in my initial concept of "MedUsa" but in later iterations I would like there to be :)
 - and finally **Google** is a mandatory requirement of this project, and I hope to make better use of the many technologies Google affords as this project continues. At this time however I imagine using websearch and Google+ feeds to bring in textual content and ideas.
 
-##Considerations
+## Considerations ##
 
-###New Media and Technology
+### New Media and Technology ###
 One thing I find in many new media projects is that often they become explorations of technologies moreso than an exploration of ideas. It is easy to find some really amazing new technology or code and then try to find a use for it; but often these can turn out to appear more as technology demonstration rather than a proper utilization of the technology to create meaning. In this sense I think technology, particularly in its almost limitless possibilities, should be thought of more as a tool to create interesting content. When I use technology I should try to use it is a way that makes it unique to some other medium. For example, using a tablet to show a skeuomorphic presentation of a paper newspaper seems a terrible waste of its potential, but using a tablet to allow for videos, bookmarks, search, and a layout more conducive to a smaller sized experience seems a better one.
 
-###The User/Participant
+### The User/Participant ###
 Another important consideration in an interactive piece is not only the output or processing, but also its input. Perhaps as I am currently studying HCI as a graduate degree I am more aware of it but having an experience that makes it really easy for others to understand and use interactive installation is a hugely underrated concept. Unless the point of the piece is to create disinterest or discomfort (could be fun!) thinking about how a "participant” who stands in front of an interactive piece would instinctively try to interact with an installation is hugely important to determining  how best to create that interaction with an installation. If a participant cannot easily use an installation, oreasily understand how their interaction is affecting it, the experience will be much less impactful, or impactful in an negative manner.
 
-###The Context
+### The Context ###
 The last thing I want to consider in this piece is where it will be set up.  Environmental and social context can make a huge difference in how this piece works within the space. For now I want to focus on two similar venues – a “party atmosphere with music” and a cello concert. As both will be filled with loud sounds, and in the case of the concert one sound meant to be undistracted, I will likely not use any sound in this piece. Also as in both case it will be in s space with many people I will try to make it as large as possible, and as “strange” so that it stands out. Also with many people and areas filled with large amounts of ambient light I do not want to use projection as it can be washed out and covered in unintentional shadows. At this point I am imaging my three screens to be large HD televisions rotated 90 degrees and covered with simple black or white pictures frames to cover the “TVness.”
 
 I look forward to working more on this project, even if only to see what it is about as it seems such a unique opportunity to share with and see not only other see fellow creative/artists but also observe their own work processes.
