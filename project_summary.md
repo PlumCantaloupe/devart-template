@@ -22,4 +22,4 @@ void hello() {
 [OpenCV](http://opencv.org/ "OpenCV")
 
 ## Images & Videos
-![First Rough Sketch of MedUsa](../project_images/Sketch_1.jpg?raw=true "First Rough Sketch of MedUsa")
+![First Rough Sketch of MedUsa](/project_images/Sketch_1.jpg?raw=true "First Rough Sketch of MedUsa")
