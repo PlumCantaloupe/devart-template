@@ -1,5 +1,5 @@
 # Project Title #
-MedUsa [working title]
+MEDuSA [working title]
   
 ## Authors ##
 Anthony Carlo Scavarelli, PlumCantaloupe
