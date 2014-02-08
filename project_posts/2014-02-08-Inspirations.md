@@ -16,12 +16,14 @@ They are not in any particular order of importance.
 - _Stanley Kubrick_ ( http://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(film) ) An another inpisrtaion for abstractionism and the ability to tell a story while another story is actually being told.
 - _Shigeru Miyamoto_ ( http://en.wikipedia.org/wiki/Super_Mario_Bros. ) To think deeper about the interaction and how it best connects to the hardware (and vice-versa)
 - _The Minalistic Movement_ ( http://en.wikipedia.org/wiki/Minimalism ) The meaning is most important. Not the tool or process.
+- _John Dewey_ ( http://en.wikipedia.org/wiki/Art_as_Experience ) Art being about the experience.
+- _Candy Chang_ ( http://beforeidie.cc/ ) Particpants following the temnplate but ultimately creating their own artwork.
 
 ### Technical Inspirations ###
 - _The Open Source Movement_ - Sharing so much so that we can all grow. I think of specifically Zack Lieberman, Joshua Noble, and so many others that are part of the OpenFrameworks, Processing, and Arduino communities.
 - _Andrew Bell_ ( http://libcinder.org/ ) - The coding standards and creative thought into using code to build an immense framework like Cinder.
 - _Dr. Ali Arya_ ( http://www.csit.carleton.ca/~arya/about.html ) - My HCI graduate supervisor. In hammering home how important it is use to use technology to it fullest potential; else otherwise use it for no good reason.
-- _Dr. Robert Biddle_ ( http://hotsoft.carleton.ca/hotsoft/people/robert-biddle/ ) - One of my HCI graduate professors. For really asking us to think and contemplate how users inetarct with technology. The importance of though, discussion, and the concept of 'wonderfullness/unique and interesting thought' being more important than the word count.
+- _Dr. Robert Biddle_ ( http://hotsoft.carleton.ca/hotsoft/people/robert-biddle/ ) - One of my HCI graduate professors. For really asking us to think and contemplate how users interact with technology. The importance of thorough discussion, and the concept of 'wonderfullness/unique and interesting thought' being more important than the wordcount.
 
 And there are so many others I may have missed in trying to come up with this list. All our lives we are constantly inspirared both conciously and sub-conciously by everything around us - it is often difficult to differentiate between and idea and community. 
 
