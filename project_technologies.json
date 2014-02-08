@@ -8,10 +8,13 @@
         ],
         "toolkits": [
             "Cinder Frameworks",
-            "OpenCV"
+            "OpenCV",
+            "FMOD"
         ]
     },
     "themes": [
-        "Awareness"
+        "Awareness",
+        "Self-Reflection",
+        "Community"
     ]
 }
