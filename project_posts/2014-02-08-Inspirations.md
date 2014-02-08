@@ -13,8 +13,8 @@ They are not in any particular order of importance.
 - M.C. Escher - His ability to seemingly bend the rules with a nod to unusual forms of inspiration in the form of mathematics.
 - Albert Einstein - The concept of 'though experiments' and his ability to 'imagine' strange new forms of matter (what is it like to travel at the speed of light). He teache show important it is to use how mind before your tools.
 - Stanley Kubrick - An another inpisrtaion for abstractionism and the ability to tell a story while another story is actually being told.
-- Shigeru Miyamoto - 
-The Minalistic Movement - The meaning is most important. Not the tool or process.
+- Shigeru Miyamoto - To think deeper about the interaction and how it best connects to the hardware (and vice-versa)
+- The Minalistic Movement - The meaning is most important. Not the tool or process.
 
 ### Technical Inspirations ###
 - The Open Source Movement - Sharing so much so that we can all grow. I think of specifically Zack Lieberman, Joshua Noble, and so many others that are part of the OpenFrameworks and Arduino communities.
