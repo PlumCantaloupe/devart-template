@@ -17,7 +17,7 @@ They are not in any particular order of importance.
 - _Shigeru Miyamoto_ ( http://en.wikipedia.org/wiki/Super_Mario_Bros. ) To think deeper about the interaction and how it best connects to the hardware (and vice-versa).
 - _The Minalistic Movement_ ( http://en.wikipedia.org/wiki/Minimalism ) The meaning is most important. Not the tool or process.
 - _John Dewey_ ( http://en.wikipedia.org/wiki/Art_as_Experience ) Art being about the experience.
-- _Candy Chang_ ( http://beforeidie.cc/ ) Participants following the temnplate but ultimately creating their own artwork.
+- _Candy Chang_ ( http://beforeidie.cc/ ) Participants following the template but ultimately creating their own artwork.
 
 ### Technical Inspirations ###
 - _The Open Source Movement_ - Sharing so much so that we can all grow. I think of specifically Zack Lieberman, Joshua Noble, and so many others that are part of the OpenFrameworks, Processing, and Arduino communities.
