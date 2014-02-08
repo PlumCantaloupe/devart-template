@@ -10,7 +10,7 @@ They are not in any particular order of importance.
 - _Robert Hodgin_ ( http://roberthodgin.com/crystalline/ ) His fascinating explorations of physical processes. He teaches how to use programming as a tool to create great visual art - that doesn't necessarily have to built as physically accurate systems. The end result is most important.
 - _Norman McClaren_ ( https://www.nfb.ca/film/neighbours_voisins/ ) His ability to use new technology in interesting forms, that also hint to larger social contexts.
 - _Alexandre Castoguay_ ( http://agitpov.net/ ) I had the pleasure of working with him on Ottawa workshops giving workshops on creating Arduino powered POV (Persistance Of Vision) attcahments for bicyccles meant to help instigate social change. He teaches us how to reappropriate technology for social change.
-- Ai WeiWei ( http://aiweiweineversorry.com/ ) - Standing up for injustice using art as a powerful medium to do so.
+- _Ai WeiWei_ ( http://aiweiweineversorry.com/ ) - Standing up for injustice using art as a powerful medium to do so.
 - _M.C. Escher_ ( http://www.mathacademy.com/pr/minitext/escher/ ) His ability to seemingly bend the rules with a nod to unusual forms of inspiration in the form of mathematics.
 - _Albert Einstein_ ( http://www.bartleby.com/173/ ) The concept of 'though experiments' and his ability to 'imagine' strange new forms of matter (what is it like to travel at the speed of light). He teache show important it is to use how mind before your tools.
 - _Stanley Kubrick_ ( http://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(film) ) An another inpisrtaion for abstractionism and the ability to tell a story while another story is actually being told.
