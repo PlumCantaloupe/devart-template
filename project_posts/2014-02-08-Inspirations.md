@@ -22,4 +22,6 @@ The Minalistic Movement - The meaning is most important. Not the tool or process
 - Dr. Ali Arya - My HCI graduate supervisor. In hammering home how important it is use to use technology to it fullest potential; else otherwise use it for no good reason.
 - Dr. Robert Biddle - One of my HCI graduate professors. For really asking us to think and contemplate how users inetarct with technology. The importance of though, discussion, and the concept of 'wonderfullness/unique and interesting thought' being more important than the word count.
 
+And there are so many others I may have missed in trying to come up with this list. All our lives we are constantly inspirared both conciously and sub-conciously by everything around us - it is often difficult to differentiate between and idea and community. 
+
 
