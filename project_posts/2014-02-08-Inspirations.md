@@ -7,7 +7,7 @@ I was just reading through my first post and found that there was many ideas I w
 They are not in any particular order of importance.
 
 ### Artistic Inspirations ###
-- Robert Hodgkins - His fascinating explorations of physical processes. He teaches how to use programming as a tool to create great visual art - that doesn't necessarily have to built as physically accurate systems. The end result is most important.
+- _Robert Hodgkins_ - His fascinating explorations of physical processes. He teaches how to use programming as a tool to create great visual art - that doesn't necessarily have to built as physically accurate systems. The end result is most important.
 - Norman McClaren - His ability to use new technology in interesting forms, that also hint to larger social contexts.
 - Alexandre Castoguay - I had the pleasure of working with him on Ottawa workshops giving workshops on creating Arduino powered POV (Persistance Of Vision) attcahments for bicyccles meant to help instigate social change. He teaches us how to reappropriate technology for social change.
 - M.C. Escher - His ability to seemingly bend the rules with a nod to unusual forms of inspiration in the form of mathematics.
