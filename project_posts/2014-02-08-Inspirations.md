@@ -16,6 +16,7 @@ They are not in any particular order of importance.
 - _Stanley Kubrick_ ( http://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(film) ) An another inpiration for abstractionism and the ability to tell a story while another story is actually being told.
 - _Shigeru Miyamoto_ ( http://en.wikipedia.org/wiki/Super_Mario_Bros. ) To think deeper about the interaction and how it best connects to the hardware (and vice-versa).
 - _The Minalistic Movement_ ( http://en.wikipedia.org/wiki/Minimalism ) The meaning is most important. Not the tool or process.
+- _Shaun Tan_ ( http://www.shauntan.net/books/the-arrival.html ) Beautiful surreal stories and illustrations with no dialog.
 - _John Dewey_ ( http://en.wikipedia.org/wiki/Art_as_Experience ) Art being about the experience.
 - _Candy Chang_ ( http://beforeidie.cc/ ) Participants following the template but ultimately creating their own artwork.
 
