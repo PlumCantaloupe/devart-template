@@ -1,6 +1,6 @@
 # Further Concept and Planning (Living Document) #
 
-I tend to do a lot of planning and sketching before I do much any real coding so I can have a better idea of how long a project will take, so this post will focus on some rough timeframes and further conceptualization. Undoubtedly this project will grow into many forms throughout this entire process but it is best to get a sense of what I might expect as go along towards a complete project in the near to far future. Also because of this I will be constantly editting this project as I further this project.
+I tend to do a lot of planning and sketching before I do much any real coding so I can have a better idea of how long a project will take, so this post will focus on some rough timeframes and further conceptualization. Undoubtedly this project will grow into many forms throughout this entire process but it is best to get a sense of what I might expect as go along towards a complete project in the near to far future. Because of this constantly evolving nature, this document will change as the project progresses toward completion.
 
 ## Refined Concepts ##
 
