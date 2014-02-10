@@ -14,6 +14,6 @@ In progress (will be video form)
 [FMOD](http://www.fmod.org/ "FMOD")
 
 ## Images & Videos ##
-![What I want the experience to feel like](../project_images/ConceptImage_2.jpg?raw=true "What I want the experience to feel like")
+![What I want the experience to feel like](/project_images/ConceptImage_2.jpg?raw=true "What I want the experience to feel like")
 
 ![First Rough Sketch of MedUsa](/project_images/Sketch_1.jpg?raw=true "First Rough Sketch of MedUsa")
