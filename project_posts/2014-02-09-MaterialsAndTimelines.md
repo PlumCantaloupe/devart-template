@@ -1,17 +1,17 @@
 # Further Concept and Planning (Living Document) #
 
-I tend to do a lot of planning and skecthing before I do much any real coding so I can have a better idea of how long a project will take so this post will focus on some rough timeframes and further conceptualization. Undoubtedly this project will grow into many forms throughout this entire process but it is best to get a sense of what I might expect as go along towards a complete project in the near to far future.
+I tend to do a lot of planning and sketching before I do much any real coding so I can have a better idea of how long a project will take, so this post will focus on some rough timeframes and further conceptualization. Undoubtedly this project will grow into many forms throughout this entire process but it is best to get a sense of what I might expect as go along towards a complete project in the near to far future. Also because of this I will be constantly editting this project as I further this project.
 
 ## Refined Concepts ##
 
 The following image is a rough render of how I want the installation to feel.
 
-![What I want the experience to feel like](../project_images/ConceptImage_1.jpg?raw=true "What I want the experience to feel like")
+![What I want the experience to feel like](../project_images/ConceptImage_2.jpg?raw=true "What I want the experience to feel like")
 
 
-This next image is how the installtion will likely actually look.
+This next image is how the installation will likely actually look.
 
-![How the Experience Will Actually Look](../project_images/ConceptImage_2.jpg?raw=true "How the Experience Will Actually Look")
+![How the Experience Will Actually Look](../project_images/ConceptImage_1.jpg?raw=true "How the Experience Will Actually Look")
 
 
 Rough materials include so far _WIP_:
