@@ -15,7 +15,7 @@ This next image is how the installtion will likely actually look.
 
 
 Rough materials include so far _WIP_:
-- 1 computer to run 3 1080p screens without a TripleHead2o for highest image fidelity (have a WinBox at home that can do this)
+- 1 computer to run 3 1080p screens without a TripleHead2Go for highest image fidelity (have a WinBox at home that can do this)
 - 1 PS3Eye camera withe IR filter removed (want 60fps at 320x240)
 - 1 USB extension (with booster) if the computer is far enough away
 - 3 1080p screens at around 60" each
