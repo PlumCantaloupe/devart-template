@@ -28,38 +28,61 @@ Rough materials include so far _WIP_:
 
 I have two or three events I would like to prototype the piece at before I 'complete' the project for teh March 28th DevArt deadline. This give me very tangible and significant milestones to reach for while also allowing for testing the installation in live settings. Things are always different when performed live, especially when it concerns lighting with computer Vision and usability when considering participant interaction. The first event will be scheduled for February 28th and the second for about March 14th. I may add a third one in the future after that.
 
-First a list of all tasks with a number attached to priority (out of 5, 1 most important and 5 nice to have) _WIP_.
+First a list of all tasks with a number attached to priority (out of 5, 5 most important to 1 nice to have) _WIP_.
 
 ### TaskList ###
-- () create circle graphic
-- () create tentacle graphics
-- () create base list of 'social issues'
-- () create particcle system to have 'social issues' falling
-- () create procedural tentacle creation system
-- () create tentacle animation from large to small and small to large
-- () create circle animation
-- () create particle system for detailed effects
-- () create lighting system for particles
-- () render to three screens
-- () capture video image from surroundings
-- () detect figure or face in video capture
-- () create optical flow system for moving tentacles a bit from outside influence
-- () create 'I want' basic list
-- () create 'I want' capture from Google+ system
-- () create 'I want' to texture system
-- () animate 'I want' textures down tentacles
+- (5) create circle graphic
+- (5) create tentacle graphics
+- (5) create base list of 'social issues'
+- (4) create particcle system to have 'social issues' falling
+- (4) create procedural tentacle creation system
+- (5) create tentacle animation from large to small and small to large
+- (2) create circle animation
+- (1) create particle system for detailed effects
+- (1) create lighting system for particles
+- (5) render to three screens
+- (4) capture video image from surroundings
+- (4) detect figure or face in video capture
+- (2) create optical flow system for moving tentacles a bit from outside influence
+- (4) create 'I want' basic list
+- (3) create 'I want' capture from Google+ system
+- (4) create 'I want' to texture system
+- (3) animate 'I want' textures down tentacles
 
 
 And now a list of milestones.
 
 ### Milestones ###
 - __Design Start__: February 6th
+- create basic timeframes:
+- list milestones:
+- create rough concept images:
+- create colour concept images within surroundings:
+- document interaction modes:
 - __Coding Start__: February 12th
+- research hardware required (and costs for rentals)
+- create static graphics prototype using off-screen FBO (future-proofing for 3 screens)
+- create tentacle creation prototype
+- create tentacle animation prototype
+- create person/head detection prototype
+- combine prototypes on one screen
+- add falling 'words' in background using pre-rendered data
+- add in texture 'I wants' onto tentacles using pre-rendered data
+- create three-screen prototype
+- test three screen prototype
+- fix bugs and test again
 - __First Milestone:__ February 27th, night club
+- take in feedback from first event and fix any issues found
+- look into particle systems for added detail
+- look into secondary motion of optical flow for secondary participants to interact with tentacles
+- create rudimentary sound reaction (or research if a good addition)
 - __Second Milestone:__ March 14th, cello performance
+- take in feedback from second event and fix any issues found
+- add in Google+ API
+- fix any outstanding issues
 - __Final Milestone:__ March 28th, DevArt Completion Date
 
-After going over these lists and milestones, as well as concepts, over teh next couple of days I will determine an appropriate estimated timeframe and add that here.
+After going over these lists and milestones, as well as concepts, over the next couple of days I will determine an appropriate estimated timeframe and add that here.
 
 ### Timeframes ###
 - To be added later ...
