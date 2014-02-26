@@ -19,14 +19,7 @@ using namespace std;
 class VerletCurtain
 {
     public:
-    int mCurtainHeight = 40;
-    int mCurtainWidth = 60;
-    int mYStart = 25; // where will the curtain start on the y axis?
-    float mRestingDistances = 6;
-    float mStiffnesses = 1;
-    float mCurtainTearSensitivity = 0; // distance the PointMasss have to go before ripping
-    
-    vector<VerletPointMass> pointmasses;
+    vector<VerletPointMass *> pointmasses;
     
     VerletCurtain();
     ~VerletCurtain();

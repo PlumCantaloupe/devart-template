@@ -44,8 +44,8 @@ class VerletPointMass
     float x,y;
     float accX, accY;
     
-    float mass = 1;
-    float damping = 20;
+    float mass;
+    float damping;
     
     // An ArrayList for links, so we can have as many links as we want to this PointMass
     vector<VerletLink> links;
@@ -55,6 +55,7 @@ class VerletPointMass
     
     VerletPointMass(float xPos, float yPos);
     ~VerletPointMass();
+    
     void updatePhysics(float timeStep, float gravity);
     void updateInteractions();
     void draw();

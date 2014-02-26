@@ -32,8 +32,8 @@ class VerletWorld
     VerletWorld();
     ~VerletWorld();
     
-    double previousTime;
-    double currentTime;
+    long previousTime;
+    long currentTime;
     int fixedDeltaTime;
     float fixedDeltaTimeSeconds;
     int leftOverDeltaTime;

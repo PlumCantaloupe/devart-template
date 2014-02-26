@@ -14,43 +14,38 @@ VerletWorld::~VerletWorld()
 // Update physics
 void VerletWorld::update()
 {
-    // calculate elapsed time
-    currentTime = getElapsedSeconds();
-    double deltaTimeMS = currentTime - previousTime;
-    previousTime = currentTime; // reset previous time
-    
-    // break up the elapsed time into manageable chunks
-    int timeStepAmt = (int)((float)(deltaTimeMS + leftOverDeltaTime) / (float)fixedDeltaTime);
-    
-    // limit the timeStepAmt to prevent potential freezing
-    timeStepAmt = min(timeStepAmt, 5);
-    
-    // store however much time is leftover for the next frame
-    leftOverDeltaTime = (int)deltaTimeMS - (timeStepAmt * fixedDeltaTime);
-    
-    // How much to push PointMasses when the user is interacting
-    //        mouseInfluenceScalar = 1.0 / timeStepAmt;
-    
-    // update physics
-    for (int iteration = 1; iteration <= timeStepAmt; iteration++) {
-        // solve the constraints multiple times
-        // the more it's solved, the more accurate.
-        for (int x = 0; x < constraintAccuracy; x++) {
-            for (int i = 0; i < pointMasses.size(); i++) {
-                pointMasses.at(i)->solveConstraints();
-            }
-            //                for (int i = 0; i < circles.size(); i++) {
-            //                    Circle c = (Circle) circles.get(i);
-            //                    c.solveConstraints();
-            //                }
-        }
-        
-        // update each PointMass's position
-        for (int i = 0; i < pointMasses.size(); i++) {
-            pointMasses.at(i)->updateInteractions();
-            pointMasses.at(i)->updatePhysics(fixedDeltaTimeSeconds, 980.0f);
-        }
-    }
+//    // calculate elapsed time
+//    currentTime = getElapsedSeconds() * 1000;
+//    long deltaTimeMS = currentTime - previousTime;
+//    previousTime = currentTime; // reset previous time
+//    
+//    // break up the elapsed time into manageable chunks
+//    int timeStepAmt = (int)((float)(deltaTimeMS + leftOverDeltaTime) / (float)fixedDeltaTime);
+//    
+//    // limit the timeStepAmt to prevent potential freezing
+//    timeStepAmt = min(timeStepAmt, 5);
+//    
+//    // store however much time is leftover for the next frame
+//    leftOverDeltaTime = (int)deltaTimeMS - (timeStepAmt * fixedDeltaTime);
+//    
+//    // How much to push PointMasses when the user is interacting
+//    //        mouseInfluenceScalar = 1.0 / timeStepAmt;
+//    
+//    // update physics
+//    for (int iteration = 1; iteration <= timeStepAmt; iteration++) {
+//        // solve the constraints multiple times for greater accuracy
+//        for (int x = 0; x < constraintAccuracy; x++) {
+//            for (int i = 0; i < pointMasses.size(); i++) {
+//                pointMasses.at(i)->solveConstraints();
+//            }
+//        }
+//        
+//        // update each PointMass's position
+//        for (int i = 0; i < pointMasses.size(); i++) {
+//            pointMasses.at(i)->updateInteractions();
+//            pointMasses.at(i)->updatePhysics(fixedDeltaTimeSeconds, 980.0f);
+//        }
+//    }
 }
 
 void VerletWorld::draw()
@@ -67,8 +62,8 @@ void VerletWorld::addPointMass(VerletPointMass *pointMass)
 
 void VerletWorld::addCurtain(VerletCurtain *curtain)
 {
-    for (vector<VerletPointMass>::iterator pmIter = curtain->pointmasses.begin(); pmIter != curtain->pointmasses.end(); pmIter++) {
-        pointMasses.push_back( &(*pmIter) );
+    for (vector<VerletPointMass *>::iterator pmIter = curtain->pointmasses.begin(); pmIter != curtain->pointmasses.end(); pmIter++) {
+        pointMasses.push_back( *pmIter );
     }
 }
 

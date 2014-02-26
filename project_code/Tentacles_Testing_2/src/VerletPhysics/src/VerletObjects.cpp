@@ -18,6 +18,11 @@ VerletPointMass::VerletPointMass(float xPos, float yPos)
     
     accX = 0;
     accY = 0;
+    
+    mass= 1;
+    damping = 20;
+    
+    //console() << xPos << " " << yPos << "\n";
 }
 
 VerletPointMass::~VerletPointMass()
@@ -137,6 +142,8 @@ void VerletPointMass::attachTo(VerletPointMass *P, float restingDist, float stif
 {
     VerletLink link(this, P, restingDist, stiff, tearSensitivity, drawLink);
     links.push_back(link);
+    
+    //console() << "--\n";
 }
 
 //    void removeLink (VerletLink lnk)
@@ -160,11 +167,12 @@ void VerletPointMass::pinTo (float pX, float pY)
     pinY = pY;
 }
 
+/*******/
 
 VerletLink::VerletLink(VerletPointMass *which1, VerletPointMass *which2, float restingDist, float stiff, float tearSensitivity, BOOL drawMe)
 {
-    p1 = which1; // when you set one object to another, it's pretty much a reference.
-    p2 = which2; // Anything that'll happen to p1 or p2 in here will happen to the paticles in our ArrayList
+    p1 = which1;
+    p2 = which2;
     
     mRestingDistance = restingDist;
     mStiffness = stiff;
@@ -203,16 +211,20 @@ void VerletLink::solve()
     
     p2->x -= diffX * scalarP2 * difference;
     p2->y -= diffY * scalarP2 * difference;
+    
+//    console() << "position:" << p1->x << "  " << p1->y << "\n";
+//    console() << "diff:" << diffX << "  " << diffY << "\n";
+//    console() << "scalar:" << scalarP1 << "  " << scalarP2 << "\n";
 }
 
 // Draw if it's visible
 void VerletLink::draw()
 {
-    console() << "-----------\n";
+//    console() << "-----------\n";
     
     if (mDrawThis)
     {
-        console() << Vec2f(p1->x, p1->y) << " " << Vec2f(p2->x, p2->y) << "\n";
+  //      console() << Vec2f(p1->x, p1->y) << " " << Vec2f(p2->x, p2->y) << "\n";
         gl::drawLine(Vec2f(p1->x, p1->y), Vec2f(p2->x, p2->y));
     }
 }

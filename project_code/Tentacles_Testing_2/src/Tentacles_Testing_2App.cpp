@@ -40,7 +40,7 @@ void Tentacles_Testing_2App::prepareSettings(Settings *settings)
 void Tentacles_Testing_2App::setup()
 {
     //set up physics
-    mVerletCurtain.setup(1, 1, 25, 6, 1, 500);
+    mVerletCurtain.setup(40, 60, 25, 6, 1, 500);
     mVerletWorld.addCurtain(&mVerletCurtain);
     
     //set up vector field
