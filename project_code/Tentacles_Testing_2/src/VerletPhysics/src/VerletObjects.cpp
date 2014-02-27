@@ -8,6 +8,9 @@
 
 #include "VerletObjects.h"
 
+VerletPointMass::VerletPointMass()
+{}
+
 VerletPointMass::VerletPointMass(float xPos, float yPos)
 {
     x = xPos;
@@ -22,11 +25,21 @@ VerletPointMass::VerletPointMass(float xPos, float yPos)
     mass= 1;
     damping = 20;
     
+    // we square the mouseInfluenceSize and mouseTearSize so we don't have to use squareRoot when comparing distances with this.
+    mouseInfluenceSize = 20;
+    mouseInfluenceScalar = 5;
+    mouseInfluenceSize *= mouseInfluenceSize;
+    
     //console() << xPos << " " << yPos << "\n";
 }
 
 VerletPointMass::~VerletPointMass()
-{}
+{
+    //!!delete
+    for ( vector<VerletLink*>::iterator linkIter = links.begin(); linkIter != links.end(); linkIter++ ) {
+        delete (*linkIter);
+    }
+}
 
 // The update function is used to update the physics of the PointMass.
 // motion is applied, and links are drawn here
@@ -43,6 +56,8 @@ void VerletPointMass::updatePhysics(float timeStep, float gravity) // timeStep s
     
     float timeStepSq = timeStep * timeStep;
     
+    mouseInfluenceScalar = 1.0/timeStep; //?? How much to push PointMasses when the user is interacting
+    
     // calculate the next position using Verlet Integration
     float nextX = x + velX + 0.5 * accX * timeStepSq;
     float nextY = y + velY + 0.5 * accY * timeStepSq;
@@ -58,25 +73,21 @@ void VerletPointMass::updatePhysics(float timeStep, float gravity) // timeStep s
     accY = 0;
 }
 
-void VerletPointMass::updateInteractions()
+void VerletPointMass::updateInteractions(Vec2f mousePos, Vec2f prevMousePos)
 {
-//        // this is where our interaction comes in.
-//        if (mousePressed) {
-//            float distanceSquared = distPointToSegmentSquared(pmouseX,pmouseY,mouseX,mouseY,x,y);
-//            if (mouseButton == LEFT) {
-//                if (distanceSquared < mouseInfluenceSize) { // remember mouseInfluenceSize was squared in setup()
-//                    // To change the velocity of our PointMass, we subtract that change from the lastPosition.
-//                    // When the physics gets integrated (see updatePhysics()), the change is calculated
-//                    // Here, the velocity is set equal to the cursor's velocity
-//                    lastX = x - (mouseX-pmouseX)*mouseInfluenceScalar;
-//                    lastY = y - (mouseY-pmouseY)*mouseInfluenceScalar;
-//                }
-//            }
-//            else { // if the right mouse button is clicking, we tear the cloth by removing links
-//                if (distanceSquared < mouseTearSize)
-//                    links.clear();
-//            }
-//        }
+    //console() << "hello";
+    
+    // this is where our interaction comes in.
+    float distanceSquared = distPointToSegmentSquared( prevMousePos.x, prevMousePos.y ,mousePos.x, mousePos.y ,x ,y );
+    if (distanceSquared < mouseInfluenceSize) { // remember mouseInfluenceSize was squared in setup()
+        //console() << "hi";
+        
+        // To change the velocity of our PointMass, we subtract that change from the lastPosition.
+        // When the physics gets integrated (see updatePhysics()), the change is calculated
+        // Here, the velocity is set equal to the cursor's velocity
+        lastX = x - (mousePos.x - prevMousePos.x) * mouseInfluenceScalar;
+        lastY = y - (mousePos.y - prevMousePos.y) * mouseInfluenceScalar;
+    }
 }
 
 void VerletPointMass::draw()
@@ -84,8 +95,8 @@ void VerletPointMass::draw()
     // draw the links and points
     glLineWidth(1.0f);
     if (links.size() > 0) {
-        for (int i = 0; i < links.size(); i++) {
-            links.at(i).draw();
+        for ( vector<VerletLink*>::iterator linkIter = links.begin(); linkIter != links.end(); linkIter++ ) {
+            (*linkIter)->draw();
         }
     }
     else {
@@ -98,8 +109,8 @@ void VerletPointMass::solveConstraints()
 {
     /* Link Constraints */
     // Links make sure PointMass connected to this one is at a set distance away
-    for (int i = 0; i < links.size(); i++) {
-        links.at(i).solve();
+    for ( vector<VerletLink*>::iterator linkIter = links.begin(); linkIter != links.end(); linkIter++ ) {
+        (*linkIter)->solve();
     }
     
     /* Boundary Constraints */
@@ -140,8 +151,7 @@ void VerletPointMass::attachTo(VerletPointMass *P, float restingDist, float stif
 
 void VerletPointMass::attachTo(VerletPointMass *P, float restingDist, float stiff, float tearSensitivity, BOOL drawLink)
 {
-    VerletLink link(this, P, restingDist, stiff, tearSensitivity, drawLink);
-    links.push_back(link);
+    links.push_back( new VerletLink(this, P, restingDist, stiff, tearSensitivity, drawLink) );
     
     //console() << "--\n";
 }
@@ -167,12 +177,36 @@ void VerletPointMass::pinTo (float pX, float pY)
     pinY = pY;
 }
 
+// Using http://www.codeguru.com/forum/showpost.php?p=1913101&postcount=16
+// We use this to have consistent interaction
+// so if the cursor is moving fast, it won't interact only in spots where the applet registers it at
+float VerletPointMass::distPointToSegmentSquared(float lineX1, float lineY1, float lineX2, float lineY2, float pointX, float pointY)
+{
+    float vx = lineX1 - pointX;
+    float vy = lineY1 - pointY;
+    float ux = lineX2 - lineX1;
+    float uy = lineY2 - lineY1;
+    
+    float len = ux*ux + uy*uy;
+    float det = (-vx * ux) + (-vy * uy);
+    if ((det < 0) || (det > len)) {
+        ux = lineX2 - pointX;
+        uy = lineY2 - pointY;
+        return min(vx*vx+vy*vy, ux*ux+uy*uy);
+    }
+    
+    det = ux*vy - uy*vx;
+    return (det*det) / len;
+}
+
 /*******/
 
 VerletLink::VerletLink(VerletPointMass *which1, VerletPointMass *which2, float restingDist, float stiff, float tearSensitivity, BOOL drawMe)
 {
     p1 = which1;
     p2 = which2;
+    
+    //console() << p1->x << " " << p1->y << " " << p2->x << " " << p2->y << "\n";
     
     mRestingDistance = restingDist;
     mStiffness = stiff;
@@ -185,6 +219,8 @@ VerletLink::~VerletLink(){}
 // Solve the link constraint
 void VerletLink::solve()
 {
+    //console() << p1->x << " " << p2->x << "\n";
+    
     // calculate the distance between the two PointMasss
     float diffX = p1->x - p2->x;
     float diffY = p1->y - p2->y;
@@ -211,6 +247,8 @@ void VerletLink::solve()
     
     p2->x -= diffX * scalarP2 * difference;
     p2->y -= diffY * scalarP2 * difference;
+    
+//    console() << diffX << " " << diffY << " " << scalarP1 << " " << scalarP2 << " " << difference << "\n";
     
 //    console() << "position:" << p1->x << "  " << p1->y << "\n";
 //    console() << "diff:" << diffX << "  " << diffY << "\n";

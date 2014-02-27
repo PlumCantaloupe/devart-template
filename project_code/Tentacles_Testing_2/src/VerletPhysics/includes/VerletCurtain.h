@@ -19,7 +19,8 @@ using namespace std;
 class VerletCurtain
 {
     public:
-    vector<VerletPointMass *> pointmasses;
+    vector<VerletPointMass*> pointmasses;
+    vector<VerletPointMass*> pointmassData;
     
     VerletCurtain();
     ~VerletCurtain();
@@ -30,6 +31,8 @@ class VerletCurtain
                 const float restingDistances,
                 const float stiffnesses,
                 const float curtainTearSensitivity );
+    
+    void writeDebug();
 };
 
 #endif

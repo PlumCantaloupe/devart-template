@@ -47,17 +47,22 @@ class VerletPointMass
     float mass;
     float damping;
     
+    // every PointMass within this many pixels will be influenced by the cursor
+    float mouseInfluenceSize;
+    float mouseInfluenceScalar;
+    
     // An ArrayList for links, so we can have as many links as we want to this PointMass
-    vector<VerletLink> links;
+    vector<VerletLink*> links;
     
     BOOL pinned;
     float pinX, pinY;
     
+    VerletPointMass();
     VerletPointMass(float xPos, float yPos);
     ~VerletPointMass();
     
     void updatePhysics(float timeStep, float gravity);
-    void updateInteractions();
+    void updateInteractions(Vec2f mousePos, Vec2f prevMousePos);
     void draw();
     void solveConstraints();
     
@@ -68,6 +73,8 @@ class VerletPointMass
     
     void applyForce(float fX, float fY);
     void pinTo (float pX, float pY);
+    
+    float distPointToSegmentSquared(float lineX1, float lineY1, float lineX2, float lineY2, float pointX, float pointY);
 };
 
 #endif

@@ -23,10 +23,16 @@ class Tentacles_Testing_2App : public AppNative {
 //    CameraPersp     mCam;
     VerletWorld     mVerletWorld;
     VerletCurtain   mVerletCurtain;
+    double          mCurrTime;
+    double          mPrevTime;
+    BOOL            mIsMouseDown;
+    Vec2i           mCurrMousePos;
+    Vec2i           mPrevMousePos;
     
     void prepareSettings(Settings *settings);
 	void setup();
-	void mouseDown( MouseEvent event );	
+	void mouseDown( MouseEvent event );
+    void mouseUp( MouseEvent event );
 	void update();
 	void draw();
 };
@@ -34,13 +40,13 @@ class Tentacles_Testing_2App : public AppNative {
 void Tentacles_Testing_2App::prepareSettings(Settings *settings)
 {
     settings->setWindowSize(APP_RES);
-    settings->setFrameRate(30.0f);
+    settings->setFrameRate(60.0f);
 }
 
 void Tentacles_Testing_2App::setup()
 {
     //set up physics
-    mVerletCurtain.setup(40, 60, 25, 6, 1, 500);
+    mVerletCurtain.setup(40, 1, 25, 6, 1, 500);
     mVerletWorld.addCurtain(&mVerletCurtain);
     
     //set up vector field
@@ -63,11 +69,27 @@ void Tentacles_Testing_2App::setup()
 }
 
 void Tentacles_Testing_2App::mouseDown( MouseEvent event )
-{}
+{
+    mIsMouseDown = true;
+}
+
+void Tentacles_Testing_2App::mouseUp( MouseEvent event )
+{
+    mIsMouseDown = false;
+}
 
 void Tentacles_Testing_2App::update()
 {
-    mVerletWorld.update(); //update physics
+    mCurrMousePos = getMousePos() - getWindowPos();
+    
+    mCurrTime = getElapsedSeconds();
+    //mVerletWorld.update( mCurrTime - mPrevTime, true, mCurrMousePos, mPrevMousePos ); //update physics
+    
+    mPrevTime = mCurrTime;
+    mPrevMousePos = mCurrMousePos;
+    
+    mVerletCurtain.writeDebug();
+    
 //    mTestTentacle.update(&mVectorField, &mUtility3D); //update tentacles
 }
 

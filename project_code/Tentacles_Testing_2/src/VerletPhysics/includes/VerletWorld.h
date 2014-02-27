@@ -39,12 +39,10 @@ class VerletWorld
     int leftOverDeltaTime;
     int constraintAccuracy;
     
-    void update();
+    void update(double timeStep, BOOL hasMouseInteraction = false, Vec2i mousePos = Vec2i::zero(), Vec2i prevMousePos = Vec2i::zero());
     void draw();
     void addPointMass(VerletPointMass *pointMass);
     void addCurtain(VerletCurtain *curtain);
-    float distPointToSegmentSquared(float lineX1, float lineY1, float lineX2, float lineY2, float pointX, float pointY);
-    
 };
 
 

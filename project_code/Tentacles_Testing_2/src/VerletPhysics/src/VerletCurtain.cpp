@@ -4,7 +4,12 @@ VerletCurtain::VerletCurtain()
 {}
 
 VerletCurtain::~VerletCurtain()
-{}
+{
+    //!!delete here
+    for ( vector<VerletPointMass*>::iterator pmIter = pointmasses.begin(); pmIter != pointmasses.end(); pmIter++ ) {
+        delete (*pmIter);
+    }
+}
 
 void VerletCurtain::setup(  const int curtainHeight,
                             const int curtainWidth,
@@ -20,7 +25,8 @@ void VerletCurtain::setup(  const int curtainHeight,
     // Since this our fabric is basically a grid of points, we have two loops
     for (int y = 0; y <= curtainHeight; y++) { // due to the way PointMasss are attached, we need the y loop on the outside
         for (int x = 0; x <= curtainWidth; x++) {
-            VerletPointMass *pointmass = new VerletPointMass(midWidth + x * restingDistances, y * restingDistances + yStart);
+            pointmassData.push_back( new VerletPointMass(midWidth + x * restingDistances, y * restingDistances + yStart) );
+            VerletPointMass *pointmass = pointmassData.at(pointmassData.size()-1);
             
             // attach to
             // x - 1  and
@@ -47,7 +53,7 @@ void VerletCurtain::setup(  const int curtainHeight,
                 pointmass->pinTo(pointmass->x, pointmass->y);
             }
             
-            pointmasses.push_back(pointmass); // add to PointMass array
+            pointmasses.push_back(pointmass);
         }
     }
     
@@ -60,4 +66,19 @@ void VerletCurtain::setup(  const int curtainHeight,
 //            console() << "link:" << pointmasses.at(i)->links.at(j).p1->x << "," << pointmasses.at(i)->links.at(j).p1->y << " " << pointmasses.at(i)->links.at(j).p2->x << "," << pointmasses.at(i)->links.at(j).p2->y << "\n";
 //        }
 //    }
+}
+
+void VerletCurtain::writeDebug()
+{
+    console() << pointmasses.size() << "\n";
+    
+    for (int i = 0; i < pointmasses.size(); i++) {
+
+        console() << "------- "<< " " << pointmasses.at(i)->links.size() << " " << pointmasses.at(i)->links.size() << " " << i << " \n";
+        console() << "pointmass:" << pointmasses.at(i)->x << "," << pointmasses.at(i)->y << "\n";
+
+        for(int j = 0; j < pointmasses.at(i)->links.size(); j++) {
+            console() << "link:" << pointmasses.at(i)->links.at(j)->p1->x << "," << pointmasses.at(i)->links.at(j)->p1->y << " " << pointmasses.at(i)->links.at(j)->p2->x << "," << pointmasses.at(i)->links.at(j)->p2->y << "\n";
+        }
+    }
 }
