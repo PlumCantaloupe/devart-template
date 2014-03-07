@@ -7,6 +7,7 @@ Recently I have been exploring how to procedurally create tentacles and found th
 For the creation of tube-like structures I quickly came to find that I would require the use of an algorithm called PTR (Parallel Transport Frames). This is based on the concept of taking a line and separating it into segments where we could move a vector along its length that remains parallel to the line and which also helps retain the least amount of change from the last defined. In particular we do not want the normal axis flipping between segments or else we get a twisting effect that can be seen when using the older 'Frenet' frame approach during curve straightening. Fortunately Cinder already has a great implemention of creating PTR objects from 3D splines in their samples directory which can easily visualize the effects of the Frenet twisting as well as the PTR lack of twisting as seen below.
 
 ![Image of PTR created 3D Tube](../project_images/PTR_1.jpg?raw=true "Image of PTR created 3D Tube")
+&nbsp;
 ![Image of Frenet created 3D Tube](../project_images/PTR_2.jpg?raw=true "Image of Frenet created 3D Tube")
 
 The problems came from after I could create tube like objects that resembed snakes they still needed to be animated. Merely moving the points of the spline curves using sine and cosine diminishing curves was not working very well for myself, and did not leave itself easily open to participant disturbance. I then thought perhaps it would be best to have the points affected by an outward forcing vector field that I could easily manipulate using Optical flow.
