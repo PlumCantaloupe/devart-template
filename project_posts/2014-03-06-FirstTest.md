@@ -38,9 +38,10 @@ From the observations made I want to explore the following changes:
 - I am not suite sure yet how to move participants away from the idea that their weight affects teh number of spikes. Still need to think on this ...
 
 ## Conclusion
+Overall it seems this piece is on the right track but lacks some visibility and relatability. I do believe that adding two more screens and adjusting some of the movement and animation to better relate to the participant standing on the platform will help this, and provide a more natural usability. I also believe that the meaning will be less clear once I get in the Google+ posts as they spill across the spikes.
 
 ## Duct Tape Fix
-As an embarrassing but humourous side note was that when I got to the event the Serial port to the Arduino controlling pad that detected when people stood on the pedestal failed. As I was not comfortable with manually controlling the interaction I had to come up with another solution which ended up being what was seen in the picture below. Though extremely haphazard using the enter key of the keyboard worked quite well after using two tape rolls compressed as fill-in springs that would pop the pedestal off the keyboard key when a person dismounted. Not the best solution but definitely one I was surprised actually worked.
+As an embarrassing but humourous side note was that when I got to the event the Serial port to the Arduino controlling pad that detected when people stood on the pedestal failed. As I was not comfortable with manually controlling the interaction I had to come up with another solution which ended up being what was seen in the picture below. Though extremely haphazard using the enter key of the keyboard worked quite well after using two tape rolls compressed as fill-in springs that would pop the pedestal off the keyboard key when a person dismounted. Not the best solution but definitely one I was surprised actually worked. The duct tape over the esc button is so that no sweater thrown over top to hide it did not exit teh program.
 
 ![Image of Keyboard Pedestal](../project_images/FirstEvent_3.jpg?raw=true "Image of Keyboard Pedestal") 
 
