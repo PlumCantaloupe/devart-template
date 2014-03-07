@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
+		00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784AF0FF439BC000DE1D7 /* Accelerate.framework */; };
+		00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */; };
+		00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B10FF439BC000DE1D7 /* AudioUnit.framework */; };
+		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
+		04EE38B355FA43DCB6B9CAAE /* random.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A42D54BD046408E88B5EAD3 /* random.png */; };
+		28DC8F320B8C474DA9D1C268 /* Light_glsl.vert in Resources */ = {isa = PBXBuildFile; fileRef = 544CE65A18D54902AA719D89 /* Light_glsl.vert */; };
+		29651AD333774C6382477F8C /* Blur_h_glsl.vert in Resources */ = {isa = PBXBuildFile; fileRef = 687150D13AB5413FAD244563 /* Blur_h_glsl.vert */; };
+		2B6236013FAE4332A46F3FFD /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 23FFB779E03C4448A0BDE538 /* CinderApp.icns */; };
+		2C0E495E19AA4AFBBF3A6533 /* CubeShadowMap_glsl.vert in Resources */ = {isa = PBXBuildFile; fileRef = 897937F9AB7F404FBE8252BF /* CubeShadowMap_glsl.vert */; };
+		31B5C18B2BAF4DBBA205E7D0 /* FXAA_glsl.frag in Resources */ = {isa = PBXBuildFile; fileRef = 2BFBCEA08A9C4C60B27A95F1 /* FXAA_glsl.frag */; };
+		325C6A91F2704FC0AF5F3CAE /* Blur_h_glsl.frag in Resources */ = {isa = PBXBuildFile; fileRef = 93C1E38218D64997BF9F13E8 /* Blur_h_glsl.frag */; };
+		38F14A478BEF49969FC0DB96 /* SSAO_glsl.frag in Resources */ = {isa = PBXBuildFile; fileRef = 64B3BC0420304B2BA4FAD4C2 /* SSAO_glsl.frag */; };
+		4591E31A52654F968153ED7F /* FXAA_glsl.vert in Resources */ = {isa = PBXBuildFile; fileRef = B398512D4F1D4B608F1EE74B /* FXAA_glsl.vert */; };
+		4D737022E51049DCB14A89D0 /* Deferred_glsl.vert in Resources */ = {isa = PBXBuildFile; fileRef = 9B60DA021E54439ABB2AA85B /* Deferred_glsl.vert */; };
+		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
+		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
+		5A2AE7EE4F7448A28E19E805 /* AlphaToRGB_glsl.vert in Resources */ = {isa = PBXBuildFile; fileRef = 0E961D48448040449ECE188D /* AlphaToRGB_glsl.vert */; };
+		601AD874656947698F9E242D /* Deferred_glsl.frag in Resources */ = {isa = PBXBuildFile; fileRef = 79A6D129596444B1AC3448B2 /* Deferred_glsl.frag */; };
+		84F662389BD44D16B0B775A0 /* SSAO_glsl.vert in Resources */ = {isa = PBXBuildFile; fileRef = 633CDCFAD9DF4D32BBE3F693 /* SSAO_glsl.vert */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		AC1BBC75723D4EC387895E4F /* Blur_v_glsl.vert in Resources */ = {isa = PBXBuildFile; fileRef = D8FC4E61279841028E0E981C /* Blur_v_glsl.vert */; };
+		BB954127D381446EBEB21E5E /* CubeShadowMap_glsl.frag in Resources */ = {isa = PBXBuildFile; fileRef = 43FC2C000CAE43F9BC0484D9 /* CubeShadowMap_glsl.frag */; };
+		C9C8E424CCB74506B3293B8C /* Blur_v_glsl.frag in Resources */ = {isa = PBXBuildFile; fileRef = EE59EF7D3FE74DE7AB462075 /* Blur_v_glsl.frag */; };
+		CAF1A52FDA3548268B50CF46 /* BasicBlender_glsl.vert in Resources */ = {isa = PBXBuildFile; fileRef = 2E704F85BF9945919147FA35 /* BasicBlender_glsl.vert */; };
+		CF87B2510EA642CCB7EBB544 /* Interaction_HotOrColdApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D12130C51B54F44B7DDA025 /* Interaction_HotOrColdApp.cpp */; };
+		D419A29044DC493FB35D6FBF /* BasicBlender_glsl.frag in Resources */ = {isa = PBXBuildFile; fileRef = D61B74491DF3414A89D16DEC /* BasicBlender_glsl.frag */; };
+		DF287AB518BA525F00099767 /* PlayerShip.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF287AB218BA525F00099767 /* PlayerShip.obj */; };
+		DF287AB818BA546E00099767 /* CentralSphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF287AB718BA546E00099767 /* CentralSphere.obj */; };
+		DF287ABE18BA5A9E00099767 /* BasicModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF287ABC18BA5A9E00099767 /* BasicModel.cpp */; };
+		DF287AC018BA5C2500099767 /* Ground.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF287ABF18BA5C2500099767 /* Ground.obj */; };
+		DF287AC518BAC8B500099767 /* Projectile.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF287AC418BAC8B500099767 /* Projectile.obj */; };
+		DF52171318BEFDB800A53D8C /* Spike3.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF52171018BEFDB800A53D8C /* Spike3.obj */; };
+		DF52171418BEFDB800A53D8C /* Spike2.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF52171118BEFDB800A53D8C /* Spike2.obj */; };
+		DF52171518BEFDB800A53D8C /* Spike1.obj in Resources */ = {isa = PBXBuildFile; fileRef = DF52171218BEFDB800A53D8C /* Spike1.obj */; };
+		DF52172218BEFF3400A53D8C /* Spike.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF52172018BEFF3400A53D8C /* Spike.cpp */; };
+		DF98AE7218BB086B00666EC1 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = DF98AE7118BB086B00666EC1 /* CinderApp.icns */; };
+		EC89D35AC158473F8B728A9C /* Light_glsl.frag in Resources */ = {isa = PBXBuildFile; fileRef = 80AA2B44DC844BC596E8952E /* Light_glsl.frag */; };
+		F1B67DBAB2D64DF188A0CA96 /* AlphaToRGB_glsl.frag in Resources */ = {isa = PBXBuildFile; fileRef = FA24331AD1E04D7280A0F5AC /* AlphaToRGB_glsl.frag */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0091D8F80E81B9330029341E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		00B784AF0FF439BC000DE1D7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00B784B10FF439BC000DE1D7 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		0E961D48448040449ECE188D /* AlphaToRGB_glsl.vert */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = AlphaToRGB_glsl.vert; path = "../blocks/Cinder Deferred Renderer/resources/CinderDeferredResources/shaders/AlphaToRGB_glsl.vert"; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		2158F672A94E4C94A1CDAEA1 /* DeferredRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DeferredRenderer.h; path = "../blocks/Cinder Deferred Renderer/src/CinderDeferred/DeferredRenderer.h"; sourceTree = "<group>"; };
+		23FFB779E03C4448A0BDE538 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
+		26E3B44A40BB4F0AA25564F4 /* CubeShadowMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CubeShadowMap.h; path = "../blocks/Cinder Deferred Renderer/src/CinderDeferred/CubeShadowMap.h"; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2BFBCEA08A9C4C60B27A95F1 /* FXAA_glsl.frag */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = FXAA_glsl.frag; path = "../blocks/Cinder Deferred Renderer/resources/CinderDeferredResources/shaders/FXAA_glsl.frag"; sourceTree = "<group>"; };
+		2E704F85BF9945919147FA35 /* BasicBlender_glsl.vert */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = BasicBlender_glsl.vert; path = "../blocks/Cinder Deferred Renderer/resources/CinderDeferredResources/shaders/BasicBlender_glsl.vert"; sourceTree = "<group>"; };
+		43FC2C000CAE43F9BC0484D9 /* CubeShadowMap_glsl.frag */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = CubeShadowMap_glsl.frag; path = "../blocks/Cinder Deferred Renderer/resources/CinderDeferredResources/shaders/CubeShadowMap_glsl.frag"; sourceTree = "<group>"; };
+		46C2F68895AD43E4B9FE23D1 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
+		49697D5272A04B05A64912A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
+		544CE65A18D54902AA719D89 /* Light_glsl.vert */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Light_glsl.vert; path = "../blocks/Cinder Deferred Renderer/resources/CinderDeferredResources/shaders/Light_glsl.vert"; sourceTree = "<group>"; };
+		5A42D54BD046408E88B5EAD3 /* random.png */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = random.png; path = "../blocks/Cinder Deferred Renderer/resources/CinderDeferredResources/textures/random.png"; sourceTree = "<group>"; };
+		633CDCFAD9DF4D32BBE3F693 /* SSAO_glsl.vert */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = SSAO_glsl.vert; path = "../blocks/Cinder Deferred Renderer/resources/CinderDeferredResources/shaders/SSAO_glsl.vert"; sourceTree = "<group>"; };
+		64B3BC0420304B2BA4FAD4C2 /* SSAO_glsl.frag */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = SSAO_glsl.frag; path = "../blocks/Cinder Deferred Renderer/resources/CinderDeferredResources/shaders/SSAO_glsl.frag"; sourceTree = "<group>"; };
+		687150D13AB5413FAD244563 /* Blur_h_glsl.vert */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Blur_h_glsl.vert; path = "../blocks/Cinder Deferred Renderer/resources/CinderDeferredResources/shaders/Blur_h_glsl.vert"; sourceTree = "<group>"; };
+		79A6D129596444B1AC3448B2 /* Deferred_glsl.frag */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Deferred_glsl.frag; path = "../blocks/Cinder Deferred Renderer/resources/CinderDeferredResources/shaders/Deferred_glsl.frag"; sourceTree = "<group>"; };
+		80AA2B44DC844BC596E8952E /* Light_glsl.frag */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Light_glsl.frag; path = "../blocks/Cinder Deferred Renderer/resources/CinderDeferredResources/shaders/Light_glsl.frag"; sourceTree = "<group>"; };
+		897937F9AB7F404FBE8252BF /* CubeShadowMap_glsl.vert */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = CubeShadowMap_glsl.vert; path = "../blocks/Cinder Deferred Renderer/resources/CinderDeferredResources/shaders/CubeShadowMap_glsl.vert"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Game_HotOrCold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game_HotOrCold.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93C1E38218D64997BF9F13E8 /* Blur_h_glsl.frag */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Blur_h_glsl.frag; path = "../blocks/Cinder Deferred Renderer/resources/CinderDeferredResources/shaders/Blur_h_glsl.frag"; sourceTree = "<group>"; };
+		9B60DA021E54439ABB2AA85B /* Deferred_glsl.vert */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Deferred_glsl.vert; path = "../blocks/Cinder Deferred Renderer/resources/CinderDeferredResources/shaders/Deferred_glsl.vert"; sourceTree = "<group>"; };
+		9D12130C51B54F44B7DDA025 /* Interaction_HotOrColdApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Interaction_HotOrColdApp.cpp; path = ../src/Interaction_HotOrColdApp.cpp; sourceTree = "<group>"; };
+		B398512D4F1D4B608F1EE74B /* FXAA_glsl.vert */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = FXAA_glsl.vert; path = "../blocks/Cinder Deferred Renderer/resources/CinderDeferredResources/shaders/FXAA_glsl.vert"; sourceTree = "<group>"; };
+		C69D95380DAC4E7396B8CA0E /* Game_HotOrCold_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = Game_HotOrCold_Prefix.pch; sourceTree = "<group>"; };
+		D61B74491DF3414A89D16DEC /* BasicBlender_glsl.frag */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = BasicBlender_glsl.frag; path = "../blocks/Cinder Deferred Renderer/resources/CinderDeferredResources/shaders/BasicBlender_glsl.frag"; sourceTree = "<group>"; };
+		D8FC4E61279841028E0E981C /* Blur_v_glsl.vert */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Blur_v_glsl.vert; path = "../blocks/Cinder Deferred Renderer/resources/CinderDeferredResources/shaders/Blur_v_glsl.vert"; sourceTree = "<group>"; };
+		DF287AB218BA525F00099767 /* PlayerShip.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlayerShip.obj; sourceTree = "<group>"; };
+		DF287AB718BA546E00099767 /* CentralSphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CentralSphere.obj; sourceTree = "<group>"; };
+		DF287ABC18BA5A9E00099767 /* BasicModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BasicModel.cpp; path = ../src/BasicModel.cpp; sourceTree = "<group>"; };
+		DF287ABF18BA5C2500099767 /* Ground.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ground.obj; sourceTree = "<group>"; };
+		DF287AC418BAC8B500099767 /* Projectile.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Projectile.obj; sourceTree = "<group>"; };
+		DF52171018BEFDB800A53D8C /* Spike3.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Spike3.obj; sourceTree = "<group>"; };
+		DF52171118BEFDB800A53D8C /* Spike2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Spike2.obj; sourceTree = "<group>"; };
+		DF52171218BEFDB800A53D8C /* Spike1.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Spike1.obj; sourceTree = "<group>"; };
+		DF52171618BEFF0B00A53D8C /* ResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResourceManager.h; path = ../include/ResourceManager.h; sourceTree = "<group>"; };
+		DF52171718BEFF0B00A53D8C /* BasicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicModel.h; path = ../include/BasicModel.h; sourceTree = "<group>"; };
+		DF52171918BEFF0B00A53D8C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../include/Constants.h; sourceTree = "<group>"; };
+		DF52171B18BEFF0B00A53D8C /* KeyboardHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyboardHandler.h; path = ../include/KeyboardHandler.h; sourceTree = "<group>"; };
+		DF52171F18BEFF0B00A53D8C /* Utility_3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utility_3D.h; path = ../include/Utility_3D.h; sourceTree = "<group>"; };
+		DF52172018BEFF3400A53D8C /* Spike.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Spike.cpp; path = ../src/Spike.cpp; sourceTree = "<group>"; };
+		DF52172318BF000900A53D8C /* Spike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Spike.h; path = ../include/Spike.h; sourceTree = "<group>"; };
+		DF98AE7118BB086B00666EC1 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = CinderApp.icns; sourceTree = "<group>"; };
+		EE59EF7D3FE74DE7AB462075 /* Blur_v_glsl.frag */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Blur_v_glsl.frag; path = "../blocks/Cinder Deferred Renderer/resources/CinderDeferredResources/shaders/Blur_v_glsl.frag"; sourceTree = "<group>"; };
+		FA24331AD1E04D7280A0F5AC /* AlphaToRGB_glsl.frag */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = AlphaToRGB_glsl.frag; path = "../blocks/Cinder Deferred Renderer/resources/CinderDeferredResources/shaders/AlphaToRGB_glsl.frag"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
+				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
+				5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */,
+				00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */,
+				00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */,
+				00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */,
+				00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				038BEF67B25742C5912D005D /* Cinder Deferred Renderer */,
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
+		038BEF67B25742C5912D005D /* Cinder Deferred Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				E437E0F49A774C07A14BBCE1 /* src */,
+				548154AE78FE48B387582823 /* resources */,
+			);
+			name = "Cinder Deferred Renderer";
+			sourceTree = "<group>";
+		};
+		080E96DDFE201D6D7F000001 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9D12130C51B54F44B7DDA025 /* Interaction_HotOrColdApp.cpp */,
+				DF287ABC18BA5A9E00099767 /* BasicModel.cpp */,
+				DF52172018BEFF3400A53D8C /* Spike.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00B784AF0FF439BC000DE1D7 /* Accelerate.framework */,
+				00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */,
+				00B784B10FF439BC000DE1D7 /* AudioUnit.framework */,
+				00B784B20FF439BC000DE1D7 /* CoreAudio.framework */,
+				5323E6B50EAFCA7E003A9687 /* QTKit.framework */,
+				5323E6B10EAFCA74003A9687 /* CoreVideo.framework */,
+				0091D8F80E81B9330029341E /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Game_HotOrCold.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Game_HotOrCold */ = {
+			isa = PBXGroup;
+			children = (
+				DF98AE7118BB086B00666EC1 /* CinderApp.icns */,
+				01B97315FEAEA392516A2CEA /* Blocks */,
+				29B97315FDCFA39411CA2CEA /* Headers */,
+				080E96DDFE201D6D7F000001 /* Source */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Game_HotOrCold;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				46C2F68895AD43E4B9FE23D1 /* Resources.h */,
+				DF52171618BEFF0B00A53D8C /* ResourceManager.h */,
+				DF52171B18BEFF0B00A53D8C /* KeyboardHandler.h */,
+				DF52171F18BEFF0B00A53D8C /* Utility_3D.h */,
+				DF52171718BEFF0B00A53D8C /* BasicModel.h */,
+				DF52171918BEFF0B00A53D8C /* Constants.h */,
+				DF52172318BF000900A53D8C /* Spike.h */,
+				C69D95380DAC4E7396B8CA0E /* Game_HotOrCold_Prefix.pch */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF287AB118BA525F00099767 /* models */,
+				23FFB779E03C4448A0BDE538 /* CinderApp.icns */,
+				49697D5272A04B05A64912A6 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37D2E2FE018343128FF845DF /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				0E961D48448040449ECE188D /* AlphaToRGB_glsl.vert */,
+				FA24331AD1E04D7280A0F5AC /* AlphaToRGB_glsl.frag */,
+				2E704F85BF9945919147FA35 /* BasicBlender_glsl.vert */,
+				D61B74491DF3414A89D16DEC /* BasicBlender_glsl.frag */,
+				687150D13AB5413FAD244563 /* Blur_h_glsl.vert */,
+				93C1E38218D64997BF9F13E8 /* Blur_h_glsl.frag */,
+				D8FC4E61279841028E0E981C /* Blur_v_glsl.vert */,
+				EE59EF7D3FE74DE7AB462075 /* Blur_v_glsl.frag */,
+				897937F9AB7F404FBE8252BF /* CubeShadowMap_glsl.vert */,
+				43FC2C000CAE43F9BC0484D9 /* CubeShadowMap_glsl.frag */,
+				9B60DA021E54439ABB2AA85B /* Deferred_glsl.vert */,
+				79A6D129596444B1AC3448B2 /* Deferred_glsl.frag */,
+				B398512D4F1D4B608F1EE74B /* FXAA_glsl.vert */,
+				2BFBCEA08A9C4C60B27A95F1 /* FXAA_glsl.frag */,
+				544CE65A18D54902AA719D89 /* Light_glsl.vert */,
+				80AA2B44DC844BC596E8952E /* Light_glsl.frag */,
+				633CDCFAD9DF4D32BBE3F693 /* SSAO_glsl.vert */,
+				64B3BC0420304B2BA4FAD4C2 /* SSAO_glsl.frag */,
+			);
+			name = shaders;
+			sourceTree = "<group>";
+		};
+		548154AE78FE48B387582823 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				833188F023FB409F80AE590B /* CinderDeferredResources */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		833188F023FB409F80AE590B /* CinderDeferredResources */ = {
+			isa = PBXGroup;
+			children = (
+				ED0B9CBF075D459DA2B78A42 /* textures */,
+				37D2E2FE018343128FF845DF /* shaders */,
+			);
+			name = CinderDeferredResources;
+			sourceTree = "<group>";
+		};
+		D3CFA99F9D334BCFBB377B8A /* CinderDeferred */ = {
+			isa = PBXGroup;
+			children = (
+				2158F672A94E4C94A1CDAEA1 /* DeferredRenderer.h */,
+				26E3B44A40BB4F0AA25564F4 /* CubeShadowMap.h */,
+			);
+			name = CinderDeferred;
+			sourceTree = "<group>";
+		};
+		DF287AB118BA525F00099767 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				DF52171018BEFDB800A53D8C /* Spike3.obj */,
+				DF52171118BEFDB800A53D8C /* Spike2.obj */,
+				DF52171218BEFDB800A53D8C /* Spike1.obj */,
+				DF287AC418BAC8B500099767 /* Projectile.obj */,
+				DF287ABF18BA5C2500099767 /* Ground.obj */,
+				DF287AB718BA546E00099767 /* CentralSphere.obj */,
+				DF287AB218BA525F00099767 /* PlayerShip.obj */,
+			);
+			name = models;
+			path = ../resources/models;
+			sourceTree = "<group>";
+		};
+		E437E0F49A774C07A14BBCE1 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D3CFA99F9D334BCFBB377B8A /* CinderDeferred */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		ED0B9CBF075D459DA2B78A42 /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				5A42D54BD046408E88B5EAD3 /* random.png */,
+			);
+			name = textures;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Game_HotOrCold */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Game_HotOrCold" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Game_HotOrCold;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Game_HotOrCold;
+			productReference = 8D1107320486CEB800E47090 /* Game_HotOrCold.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Game_HotOrCold" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Game_HotOrCold */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Game_HotOrCold */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF287AC518BAC8B500099767 /* Projectile.obj in Resources */,
+				2B6236013FAE4332A46F3FFD /* CinderApp.icns in Resources */,
+				04EE38B355FA43DCB6B9CAAE /* random.png in Resources */,
+				5A2AE7EE4F7448A28E19E805 /* AlphaToRGB_glsl.vert in Resources */,
+				DF52171518BEFDB800A53D8C /* Spike1.obj in Resources */,
+				DF287AC018BA5C2500099767 /* Ground.obj in Resources */,
+				F1B67DBAB2D64DF188A0CA96 /* AlphaToRGB_glsl.frag in Resources */,
+				CAF1A52FDA3548268B50CF46 /* BasicBlender_glsl.vert in Resources */,
+				D419A29044DC493FB35D6FBF /* BasicBlender_glsl.frag in Resources */,
+				DF52171318BEFDB800A53D8C /* Spike3.obj in Resources */,
+				DF98AE7218BB086B00666EC1 /* CinderApp.icns in Resources */,
+				29651AD333774C6382477F8C /* Blur_h_glsl.vert in Resources */,
+				325C6A91F2704FC0AF5F3CAE /* Blur_h_glsl.frag in Resources */,
+				AC1BBC75723D4EC387895E4F /* Blur_v_glsl.vert in Resources */,
+				C9C8E424CCB74506B3293B8C /* Blur_v_glsl.frag in Resources */,
+				2C0E495E19AA4AFBBF3A6533 /* CubeShadowMap_glsl.vert in Resources */,
+				BB954127D381446EBEB21E5E /* CubeShadowMap_glsl.frag in Resources */,
+				4D737022E51049DCB14A89D0 /* Deferred_glsl.vert in Resources */,
+				DF287AB518BA525F00099767 /* PlayerShip.obj in Resources */,
+				601AD874656947698F9E242D /* Deferred_glsl.frag in Resources */,
+				4591E31A52654F968153ED7F /* FXAA_glsl.vert in Resources */,
+				31B5C18B2BAF4DBBA205E7D0 /* FXAA_glsl.frag in Resources */,
+				28DC8F320B8C474DA9D1C268 /* Light_glsl.vert in Resources */,
+				EC89D35AC158473F8B728A9C /* Light_glsl.frag in Resources */,
+				84F662389BD44D16B0B775A0 /* SSAO_glsl.vert in Resources */,
+				DF287AB818BA546E00099767 /* CentralSphere.obj in Resources */,
+				DF52171418BEFDB800A53D8C /* Spike2.obj in Resources */,
+				38F14A478BEF49969FC0DB96 /* SSAO_glsl.frag in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF287ABE18BA5A9E00099767 /* BasicModel.cpp in Sources */,
+				CF87B2510EA642CCB7EBB544 /* Interaction_HotOrColdApp.cpp in Sources */,
+				DF52172218BEFF3400A53D8C /* Spike.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CINDER_PATH = /Developer/cinder_dev;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Game_HotOrCold_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder_d.a\"";
+				PRODUCT_NAME = Game_HotOrCold;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CINDER_PATH = /Developer/cinder_dev;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Game_HotOrCold_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder.a\"";
+				PRODUCT_NAME = Game_HotOrCold;
+				STRIP_INSTALLED_PRODUCT = YES;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = i386;
+				CINDER_PATH = ../../../../cinder_dev;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include \"../blocks/Cinder Deferred Renderer/src/CinderDeferred\"";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = i386;
+				CINDER_PATH = ../../../../cinder_dev;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include \"../blocks/Cinder Deferred Renderer/src/CinderDeferred\"";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Game_HotOrCold" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Game_HotOrCold" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
