@@ -16,7 +16,6 @@
 		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
 		558C4D7D29204EC38A5851CB /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = B2495A6CEF0F41F58BC408F0 /* CinderApp.icns */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		DF52170B18BEB1BB00A53D8C /* VerletCurtain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF52170618BEB1BB00A53D8C /* VerletCurtain.cpp */; };
 		DF52170C18BEB1BB00A53D8C /* VerletObjects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF52170718BEB1BB00A53D8C /* VerletObjects.cpp */; };
 		DF52170D18BEB1BB00A53D8C /* VerletRagdoll.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF52170818BEB1BB00A53D8C /* VerletRagdoll.cpp */; };
 		DF52170E18BEB1BB00A53D8C /* VerletRope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF52170918BEB1BB00A53D8C /* VerletRope.cpp */; };
@@ -42,12 +41,10 @@
 		B2495A6CEF0F41F58BC408F0 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
 		B42919E248CF4312A8D1FB90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE45689E38EF4EF9BDC25741 /* Tentacles_Testing_2App.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = Tentacles_Testing_2App.cpp; path = ../src/Tentacles_Testing_2App.cpp; sourceTree = "<group>"; };
-		DF52170018BEB1BB00A53D8C /* VerletCurtain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerletCurtain.h; sourceTree = "<group>"; };
 		DF52170118BEB1BB00A53D8C /* VerletObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerletObjects.h; sourceTree = "<group>"; };
 		DF52170218BEB1BB00A53D8C /* VerletRagdoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerletRagdoll.h; sourceTree = "<group>"; };
 		DF52170318BEB1BB00A53D8C /* VerletRope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerletRope.h; sourceTree = "<group>"; };
 		DF52170418BEB1BB00A53D8C /* VerletWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerletWorld.h; sourceTree = "<group>"; };
-		DF52170618BEB1BB00A53D8C /* VerletCurtain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VerletCurtain.cpp; sourceTree = "<group>"; };
 		DF52170718BEB1BB00A53D8C /* VerletObjects.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VerletObjects.cpp; sourceTree = "<group>"; };
 		DF52170818BEB1BB00A53D8C /* VerletRagdoll.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VerletRagdoll.cpp; sourceTree = "<group>"; };
 		DF52170918BEB1BB00A53D8C /* VerletRope.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VerletRope.cpp; sourceTree = "<group>"; };
@@ -178,7 +175,6 @@
 		DF5216FF18BEB1BB00A53D8C /* includes */ = {
 			isa = PBXGroup;
 			children = (
-				DF52170018BEB1BB00A53D8C /* VerletCurtain.h */,
 				DF52170118BEB1BB00A53D8C /* VerletObjects.h */,
 				DF52170218BEB1BB00A53D8C /* VerletRagdoll.h */,
 				DF52170318BEB1BB00A53D8C /* VerletRope.h */,
@@ -190,7 +186,6 @@
 		DF52170518BEB1BB00A53D8C /* src */ = {
 			isa = PBXGroup;
 			children = (
-				DF52170618BEB1BB00A53D8C /* VerletCurtain.cpp */,
 				DF52170718BEB1BB00A53D8C /* VerletObjects.cpp */,
 				DF52170818BEB1BB00A53D8C /* VerletRagdoll.cpp */,
 				DF52170918BEB1BB00A53D8C /* VerletRope.cpp */,
@@ -275,7 +270,6 @@
 				DF52170F18BEB1BB00A53D8C /* VerletWorld.cpp in Sources */,
 				DF6D314218BD45890001EAE7 /* Tentacle.cpp in Sources */,
 				EE7EEDD92D4F49EFB2894ACE /* Tentacles_Testing_2App.cpp in Sources */,
-				DF52170B18BEB1BB00A53D8C /* VerletCurtain.cpp in Sources */,
 				DF52170E18BEB1BB00A53D8C /* VerletRope.cpp in Sources */,
 				DFBE66F618BD3F2C00666578 /* VectorField.cpp in Sources */,
 			);

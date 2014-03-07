@@ -7,7 +7,7 @@
 #include "Utility_3D.h"
 
 #include "VerletWorld.h"
-#include "VerletCurtain.h"
+//#include "VerletCurtain.h"
 
 using namespace ci;
 using namespace ci::app;
@@ -22,7 +22,7 @@ class Tentacles_Testing_2App : public AppNative {
 //    Utility_3D      mUtility3D;
 //    CameraPersp     mCam;
     VerletWorld     mVerletWorld;
-    VerletCurtain   mVerletCurtain;
+//    VerletCurtain   mVerletCurtain;
     double          mCurrTime;
     double          mPrevTime;
     BOOL            mIsMouseDown;
@@ -46,8 +46,9 @@ void Tentacles_Testing_2App::prepareSettings(Settings *settings)
 void Tentacles_Testing_2App::setup()
 {
     //set up physics
-    mVerletCurtain.setup(40, 1, 25, 6, 1, 500);
-    mVerletWorld.addCurtain(&mVerletCurtain);
+    //mVerletCurtain.setup(40, 1, 25, 6, 1, 500);
+//    mVerletWorld.addCurtain(&mVerletCurtain);
+    mVerletWorld.addCurtain(40, 1, 25, 6, 1, 500);
     
     //set up vector field
 //    mVectorField.setupField(32, 16, APP_RES.x, APP_RES.y);
@@ -83,12 +84,12 @@ void Tentacles_Testing_2App::update()
     mCurrMousePos = getMousePos() - getWindowPos();
     
     mCurrTime = getElapsedSeconds();
-    //mVerletWorld.update( mCurrTime - mPrevTime, true, mCurrMousePos, mPrevMousePos ); //update physics
+    mVerletWorld.update( mCurrTime - mPrevTime, true, mCurrMousePos, mPrevMousePos ); //update physics
     
     mPrevTime = mCurrTime;
     mPrevMousePos = mCurrMousePos;
     
-    mVerletCurtain.writeDebug();
+//    mVerletCurtain.writeDebug();
     
 //    mTestTentacle.update(&mVectorField, &mUtility3D); //update tentacles
 }

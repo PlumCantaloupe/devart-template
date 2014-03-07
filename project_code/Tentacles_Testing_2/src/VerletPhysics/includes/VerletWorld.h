@@ -42,7 +42,13 @@ class VerletWorld
     void update(double timeStep, BOOL hasMouseInteraction = false, Vec2i mousePos = Vec2i::zero(), Vec2i prevMousePos = Vec2i::zero());
     void draw();
     void addPointMass(VerletPointMass *pointMass);
-    void addCurtain(VerletCurtain *curtain);
+//    void addCurtain(VerletCurtain *curtain);
+    void addCurtain(    const int curtainHeight,
+                        const int curtainWidth,
+                                    const int yStart,
+                                    const float restingDistances,
+                                    const float stiffnesses,
+                                    const float curtainTearSensitivity );
 };
 
 

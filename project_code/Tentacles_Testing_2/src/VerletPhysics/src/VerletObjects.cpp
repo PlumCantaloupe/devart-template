@@ -219,7 +219,7 @@ VerletLink::~VerletLink(){}
 // Solve the link constraint
 void VerletLink::solve()
 {
-    //console() << p1->x << " " << p2->x << "\n";
+    console() << p1->x << " " << p1->y << " " << p2->x << " " << p2->y << "\n";
     
     // calculate the distance between the two PointMasss
     float diffX = p1->x - p2->x;
