@@ -1,7 +1,6 @@
 {
     "technologies": {
         "apis": [
-            "Web Search",
             "Google Plus"
         ],
         "platforms": [
@@ -9,7 +8,8 @@
         "toolkits": [
             "Cinder Frameworks",
             "OpenCV",
-            "FMOD"
+            "FMOD",
+            "GLSL"
         ]
     },
     "themes": [
