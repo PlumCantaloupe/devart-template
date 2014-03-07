@@ -15,13 +15,13 @@ https://github.com/PlumCantaloupe/devart-template/tree/master/project_code/Inter
 
 ## Images & Videos ##
 ###Current Prototype 'Spike' Growth
-![Spike Growth 1](../project_images/DeferredRenderer_1.jpg?raw=true "Spike Growth 1")
+![Spike Growth 1](/project_images/DeferredRenderer_1.jpg?raw=true "Spike Growth 1")
 
-![Spike Growth 2](../project_images/DeferredRenderer_2.jpg?raw=true "Spike Growth 2")
+![Spike Growth 2](/project_images/DeferredRenderer_2.jpg?raw=true "Spike Growth 2")
 
-![Spike Growth 3](../project_images/DeferredRenderer_3.jpg?raw=true "Spike Growth 3")
+![Spike Growth 3](/project_images/DeferredRenderer_3.jpg?raw=true "Spike Growth 3")
 
-![Spike Growth 4](../project_images/DeferredRenderer_4.jpg?raw=true "Spike Growth 4")
+![Spike Growth 4](/project_images/DeferredRenderer_4.jpg?raw=true "Spike Growth 4")
 
 ###Concept Imagery###
 ![What I want the experience to feel like](/project_images/ConceptImage_2.jpg?raw=true "What I want the experience to feel like")
