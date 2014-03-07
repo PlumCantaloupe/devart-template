@@ -1,12 +1,12 @@
-# And So We All Stand on the Shoulders of Giants #
+# And So We All Stand on the Shoulders of Giants
 
-## Inspirations ##
+## Inspirations
 
 I was just reading through my first post and found that there was many ideas I was throwing out without reference. I did this as is truly spilled out of a subconcious inspiration; but it is not hard to see that everything created in the present is based on the foundations of the past. I just want to take a moment and list out my inspirations for creating interactive and participatory art here as an amends for not listing them previously.
 
 They are not in any particular order of importance.
 
-### Artistic Inspirations ###
+### Artistic Inspirations
 - _Robert Hodgin_ ( http://roberthodgin.com/crystalline/ ) His fascinating explorations of physical processes. He teaches how to use programming as a tool to create great visual art - that doesn't necessarily have to be built as physically accurate systems. The end result is most important.
 - _Norman McClaren_ ( https://www.nfb.ca/film/neighbours_voisins/ ) His ability to use a medium in interesting forms, that also hint to larger social contexts.
 - _Alexandre Castoguay_ ( http://agitpov.net/ ) I had the pleasure of working with him in Ottawa workshops giving workshops on creating Arduino powered POV (Persistance Of Vision) attachments for bicycles meant to help instigate social change.
@@ -20,7 +20,7 @@ They are not in any particular order of importance.
 - _John Dewey_ ( http://en.wikipedia.org/wiki/Art_as_Experience ) Art being about the experience.
 - _Candy Chang_ ( http://beforeidie.cc/ ) Participants following the template but ultimately creating their own artwork.
 
-### Technical Inspirations ###
+### Technical Inspirations
 - _The Open Source Movement_ - Sharing so much so that we can all grow. I think of specifically Zack Lieberman, Joshua Noble, and so many others that are part of the OpenFrameworks, Processing, and Arduino communities.
 - _Andrew Bell_ ( http://libcinder.org/ ) - The coding standards and creative thought into using code to build an immense framework like Cinder.
 - _Dr. Ali Arya_ ( http://www.csit.carleton.ca/~arya/about.html ) - My HCI graduate supervisor. In hammering home how important it is use to use technology to it fullest potential; else otherwise use it for no good reason.

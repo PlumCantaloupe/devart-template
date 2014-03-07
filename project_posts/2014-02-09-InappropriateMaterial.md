@@ -1,4 +1,4 @@
-# The Role of Censorship in Art #
+# The Role of Censorship in Art
 
 ![Inappropriate Content](../project_images/InappropriateContent.png?raw=true "Inappropriate Content")
 

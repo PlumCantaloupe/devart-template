@@ -1,8 +1,8 @@
-# Further Concept and Planning (Living Document) #
+# Further Concept and Planning (Living Document)
 
 I tend to do a lot of planning and sketching before I do much any real coding so I can have a better idea of how long a project will take, so this post will focus on some rough timeframes and further conceptualization. Undoubtedly this project will grow into many forms throughout this entire process but it is best to get a sense of what I might expect as go along towards a complete project in the near to far future. Because of this constantly evolving nature, this document will change as the project progresses toward completion.
 
-## Refined Concepts ##
+## Refined Concepts
 
 The following image is a rough render of how I want the installation to feel.
 
@@ -24,13 +24,13 @@ Rough materials include so far _WIP_:
 - Standing marker (likely a round vinyl sticker or pad I can put on the floor)
 
 
-## Tasks and Timeframes ##
+## Tasks and Timeframes
 
 I have two or three events I would like to prototype the piece at before I 'complete' the project for teh March 28th DevArt deadline. This give me very tangible and significant milestones to reach for while also allowing for testing the installation in live settings. Things are always different when performed live, especially when it concerns lighting with computer Vision and usability when considering participant interaction. The first event will be scheduled for February 28th and the second for about March 14th. I may add a third one in the future after that.
 
 First a list of all tasks with a number attached to priority (out of 5, 5 most important to 1 nice to have) _WIP_.
 
-### TaskList ###
+### TaskList
 - (5) create circle graphic
 - (5) create tentacle graphics
 - (5) create base list of 'social issues'
@@ -52,7 +52,7 @@ First a list of all tasks with a number attached to priority (out of 5, 5 most i
 
 And now a list of milestones.
 
-### Milestones ###
+### Milestones
 - __Design Start__: February 6th
 - create basic timeframes:
 - list milestones:
@@ -84,6 +84,6 @@ And now a list of milestones.
 
 After going over these lists and milestones, as well as concepts, over the next couple of days I will determine an appropriate estimated timeframe and add that here.
 
-### Timeframes ###
+### Timeframes
 - To be added later ...
 
