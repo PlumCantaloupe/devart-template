@@ -1,5 +1,4 @@
-#A New Direction#
-##By Necessity##
+#A New Direction By Necessity#
 
 With the recent problems of creating moving tentacles I decided I must move onto a new or interim solution for the event on Thursday (tomorrow). As I was currently working on turning on my hobby deferred renderer project into a Cinder block (add-on for Cinder frameworks) I found myself instinctively playing with the concepts of a central object being surrounded bu other elements (such as lights) - see below.
 
