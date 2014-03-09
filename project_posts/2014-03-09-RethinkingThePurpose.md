@@ -23,4 +23,6 @@ From all these thoughts that have crossed my mind recently, I am finding the pie
 
 __The piece I create must not be about the technology, but rather a enduring utilization of the technology to tell a story, that hopefully others will pass on.__ I am not disillusioned by my chances of reaching a large audience but i beleieve in the effort, and hopefully at least one other will stop and consider.
 
-My current focus on the individual is not ill-intentioned, though it feels so, but it is only half the story. Yes, we must try and wake up, but also we must work together to enact the change we want to see. Over the next few days I am going to work on changing my piece to focus not on the individual but a group of individuals. I want people to feel as if they can contribute a small change as one, but a greatly amplified change effect when many. To be continued ...
+My current focus on the individual is not ill-intentioned, though it feels so, but it is only half the story. Yes, we must try and wake up, but also we must work together to enact the change we want to see. Over the next few days I am going to work on changing my piece to focus not on the individual but a group of individuals. I want people to feel as if they can contribute a small change as one, but a greatly amplified change effect when many. 
+
+_To be continued ..._
