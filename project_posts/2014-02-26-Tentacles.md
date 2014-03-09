@@ -1,4 +1,5 @@
 # DO NOT search Google for 'Tentacles'
+
 ## Exploring how to create snakes/tentacles
 
 Recently I have been exploring how to procedurally create tentacles and found that the problem in doing so stems from my original vision of 'medusa' like snakes flowing out of a central object, and created from two main parts: a snake-like look and a snake-like animation. Unfortunately, at this time, I have not been able to satisfactorily figure it out. Though I could sketch out relatively good looking tentacles and google images and videos of snakes and octopi projecting that motion into code became quite a different matter entirely.
