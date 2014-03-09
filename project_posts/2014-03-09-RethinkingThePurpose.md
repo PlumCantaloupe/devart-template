@@ -1,7 +1,7 @@
 # Rethinking the Purpose
 
 ## An Amazing 13.3 Minutes
-I have recently watched an amazing video lately, and it is likely one of the best ways to spend 13 minutes today, yesterday, or tomorrow.
+I have recently watched an amazing video, and it is likely one of the best ways to spend 13 minutes today, yesterday, or tomorrow. I highly recommend it (see link following).
 
 [![Alt text for your video](../project_images/VideoImage_Fake.jpg?raw=true)](https://www.youtube.com/watch?v=-rtySUhuokM)
 
