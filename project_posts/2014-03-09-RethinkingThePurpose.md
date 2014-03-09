@@ -23,7 +23,7 @@ A great example of a piece that uses technology not for the sake of technology b
 
 ## The Current State of The Art
 
-From all these thoughts that have crossed my mind recently, I am finding the piece I currently have envisioned is too focused on the individual. It is true that we must choose to act as individuals; but just as importantly, when we act, we must do so together for our voice to be heard by those in their ivory towers on Parliament Hill and in their mansions and penthouses paid for by opening the Earth, and paying non-living wages to the employees of their company. I am not a mouthpiece that can rally people together but I do enjoy and can create art that encourages participation. My part may be small but it is a part I can play nonethless. 
+From all these thoughts that have crossed my mind recently, I am finding the piece I currently have envisioned is too focused on the individual. It is true that we must choose to act as individuals; but just as importantly, when we act, we must do so together for our voice to be heard by those in their ivory towers on Parliament Hill and in their mansions and penthouses paid for by scarring the Earth, and paying non-living wages to the employees of their companies. I am not a mouthpiece that can rally people together but I do enjoy and can create art that encourages participation. My part may be small but it is a part I can play nonethless. 
 
 __The piece I create must not be about the technology, but rather a enduring utilization of the technology to tell a story, that hopefully others will pass on.__ I am not disillusioned by my chances of reaching a large audience but I believe in the effort, and hopefully at least one might stop and consider in front of the glowing screens I intend to put up.
 
