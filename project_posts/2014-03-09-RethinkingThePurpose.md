@@ -3,7 +3,7 @@
 ## An Amazing 13.3 Minutes
 I have recently watched an amazing video lately, and it is likely one of the best ways to spend 13 minutes today, yesterday, or tomorrow.
 
-:[![Alt text for your video](../project_images/VideoImage_Fake.jpg?raw=true)](https://www.youtube.com/watch?v=-rtySUhuokM):
+[![Alt text for your video](../project_images/VideoImage_Fake.jpg?raw=true)](https://www.youtube.com/watch?v=-rtySUhuokM)
 
 Created for the GlobalPOV impetus, and narrated by Dr. Ananya Roy, from the University of Berkley, this piece tries to shed light onto our misguided notions on the poor, middle-class and wealthy, while also touching on how "government hand-outs" affect us all. __It is powerful, and most importantly guided towards trying to enact social change__, something that is arguably way past due in many countries, and definitely our own in North America (Canada and the United States). This particular piece focuses on The United States but being Canadian I also see parallels in our current government that also seems driven by corporate interests at the expense of the environment (oil sands), the lower class (social programs slashed), arts (arts funding slashed), and foreign "appearances" taking precedence over action (G20 Summit). It is an unfortunate state that we also find ourselves with a growing inequality between the rich and poor, as Dr. Roy points out, the difference between the 1% and 99% hasn't been so large since the Great Depression - this is a problem.
 
