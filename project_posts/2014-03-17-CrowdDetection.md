@@ -15,18 +15,21 @@ In the end it took many tries, and few hours to go through images and manually c
 Note: All positives focused on the head and neck (from most angles) as within crowds these are likely to to be the only visible areas of people.
 
 ![Image of LBP Training](../project_images/OpenCV_LBP_Training.jpg?raw=true "Image of LBP Training")
+__Figure 1 - Screenshot of the settings IO used to train my LBP cascade.__
 
 ### Step 2 - Test the Cascade
 
 While training the cascade I also created a small sample app that goes through various images to get an idea of how it worked. It did seem to work well but does have a great number of false positives, especially away from where people are located. To try and curb this number I also added a background subtraction step that allows me to ignore any "detections" outside of any new elements within the scene, which I assume are people moving into the frame. I still have false positive within a person silhouette, such as a shoulder or bag, but generally these detections will now be where people are.
 
 ![Image of Head Detections](../project_images/OpenCV_HeadDetections.jpg?raw=true "Image of Head Detections")
+__Figure 2 - An image of the rough "head" detections I get with the LBP cascade.__
 
 ### Step 3 - Try to create a Density Generalization from the Results
 
 After detecting the rough number of "heads" I need to smooth these results into some sort of density map. My initial attempt involves breaking the image into cells which I then use to count the number of "detections" within each cell giving each cell a colour to represent the number of detections (blue being none and moving towards red and the number increases). This seems to work well enough but it is too precise and I will be considering using smoothing algorithms to smooth the results (and false detections) into something less precise but more useful. I also need to play with the number of cells.
 
 ![Image of Cell Counting Approximation](../project_images/OpenCV_CellCounting.jpg?raw=true "Image of Cell Counting Approximation")
+__Figure 3 - An image of the cell method of trying to smooth results into a desnity map.__
 
 ### Step 4 - Try and Capture Movement
 
