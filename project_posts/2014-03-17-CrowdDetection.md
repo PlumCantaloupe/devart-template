@@ -15,7 +15,7 @@ In the end it took many tries, and few hours to go through images and manually c
 Note: All positives focused on the head and neck (from most angles) as within crowds these are likely to to be the only visible areas of people.
 
 ![Image of LBP Training](../project_images/OpenCV_LBP_Training.jpg?raw=true "Image of LBP Training")
-<br />_Figure 1 - Screenshot of the settings IO used to train my LBP cascade._
+<br />_Figure 1 - Screenshot of the settings I used to train the LBP HeadDetector cascade._
 
 ### Step 2 - Test the Cascade
 
